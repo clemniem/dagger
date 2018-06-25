@@ -16,3 +16,11 @@ script:
   - npm run test:headless
   - npm run build
   - xvfb-run npm run e2e
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $DAGGER_TOKEN
+  local_dir: dist
+  on:
+    branch: master
