@@ -13,7 +13,7 @@ before_script:
 script:
   - cd dagger-app
   - ls -ll
-  - ng build --prod --aot
+  - ng build --prod
   - ng test
 
 deploy:
