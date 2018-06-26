@@ -20,6 +20,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $sh72hiw82hela823hrkjn29
-  local_dir: ${TRAVIS_BUILD_DIR}/dist/dagger-app
+  local_dir: dagger-app/dist/dagger-app
   on:
     branch: master
