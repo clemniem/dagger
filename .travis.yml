@@ -11,7 +11,6 @@ before_script:
   - npm install -g @angular/cli
 
 script:
-  - cd dagger-app
   - npm install --save-dev @angular-devkit/build-angular
   - ng build --prod --aot
 #  - ng test
@@ -20,6 +19,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $sh72hiw82hela823hrkjn29
-  local_dir: dist
+  local_dir: ${TRAVIS_BUILD_DIR}/dist
   on:
     branch: master
