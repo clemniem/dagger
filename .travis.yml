@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-  - "8"
+  - "10"
 dist: trusty
-sudo: false
+sudo: required
 
 addons:
   chrome: stable
@@ -14,9 +14,9 @@ before_script:
 
 script:
   - cd dagger-app
-  - npm install
-  - npm install --save-dev @angular-devkit/build-angular
-  - ng build --prod
+#  - npm install
+#  - npm install --save-dev @angular-devkit/build-angular
+  - ng build --prod --aot
   - ng test
 
 deploy:
