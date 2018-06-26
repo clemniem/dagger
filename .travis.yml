@@ -8,16 +8,13 @@ addons:
   chrome: stable
 
 before_script:
-  - "sudo chown root /opt/google/chrome/chrome-sandbox"
-  - "sudo chmod 4755 /opt/google/chrome/chrome-sandbox"
   - npm install -g @angular/cli
 
 script:
   - cd dagger-app
-#  - npm install
   - npm install --save-dev @angular-devkit/build-angular
   - ng build --prod --aot
-  - ng test
+#  - ng test
 
 deploy:
   provider: pages
