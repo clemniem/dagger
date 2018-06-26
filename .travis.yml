@@ -9,11 +9,11 @@ addons:
 
 before_script:
   - npm install -g @angular/cli
-  - npm install -g --save-dev @angular-devkit/build-angular
 
 script:
   - cd dagger-app
-  - ls -ll
+  - npm install
+  - npm install --save-dev @angular-devkit/build-angular
   - ng build --prod
   - ng test
 
