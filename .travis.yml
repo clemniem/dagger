@@ -13,7 +13,7 @@ before_script:
 script:
   - cd dagger-app
   - npm install --save-dev @angular-devkit/build-angular
-  - ng build --prod --aot --base-href https://clemniem.github.io/dagger/
+  - ng build --prod --aot --base-href /dagger/
 #  - ng test
 
 deploy:
