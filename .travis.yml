@@ -13,7 +13,6 @@ before_script:
 script:
   - cd dagger-app
   - npm install --save-dev @angular-devkit/build-angular
-  - npm install --save bootstrap@4
   - ng build --prod --aot --base-href /dagger/
 #  - ng test
 
